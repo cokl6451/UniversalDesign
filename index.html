@@ -1,45 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Website Title</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Assuming you'll have a CSS file named styles.css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>About Me</title>
   </head>
-  <body>
-    <header>
-      <h1>Welcome to My Website</h1>
-    </header>
-
-    <nav>
-      <!-- Navigation links can go here, e.g.: -->
-      <a href="#about">About</a> | <a href="#services">Services</a> |
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <main>
-      <section id="about">
-        <h2>About Us</h2>
-        <p>
-          This is the about section. Describe your website or business here.
-        </p>
-      </section>
-
-      <section id="services">
-        <h2>Our Services</h2>
-        <p>Details of the services you offer can be listed here.</p>
-      </section>
-
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Provide your contact details here or add a contact form.</p>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+  <body style="background-color: grey">
+    <div class="container">
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <a class="navbar-brand" href="https://github.com/cokl6451">
+            <img
+              class="rounded-circle"
+              src="github.png"
+              alt="Github Logo"
+              width="30"
+              height="30"
+            />
+          </a>
+        </ul>
+      </nav>
+    </div>
+    <br />
+    <div class="container text-center">
+      <img
+        src="98DD579E-15DC-4D64-A383-E6D677089E18_1_105_c.jpeg"
+        alt="Me and my dog"
+        height="250px"
+        width="200px"
+      />
+    </div>
+    <div class="container text-center">
+      <h1>Klable, Colton</h1>
+      <br />
+      <h5>CU Boulder, Class of 2023</h5>
+    </div>
+    <div class="container"></div>
+    <br />
+    <div class="container border=1">
+      <div class="row">
+        <div class="col-sm">
+          <div class="container">
+            <div class="card" style="width: 30rem">
+              <img
+                class="card-img-top"
+                src="srnvrd7vfeeq5qpxnabq.webp"
+                alt="Data Structures"
+              />
+              <div class="card-body">
+                <h>CSCI 2270</h>
+                <p class="card-text">
+                  Learned how to create and populate various data structures for
+                  use in applications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="container">
+            <div class="card" style="width: 30rem">
+              <img
+                class="card-img-top"
+                src="images.jpeg"
+                alt="Computer Systems"
+              />
+              <div class="card-body">
+                <h>CSCI 2400</h>
+                <p class="card-text">
+                  Learning about computer architecture and how computers perform
+                  operations at the lowest level.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container border=1">
+      <div class="row">
+        <div class="col-sm">
+          <div class="container">
+            <div class="card" style="width: 30rem">
+              <img
+                class="card-img-top"
+                src="agile.png"
+                alt="Software Development"
+                height="265"
+              />
+              <div class="card-body">
+                <h>CSCI 3308</h>
+                <p class="card-text">
+                  Learning the processes and tools in which modern web
+                  applications are developed in industry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="container">
+            <!-- Content here -->
+            <div class="card" style="width: 30rem">
+              <img
+                class="card-img-top"
+                src="phys2600.jpeg"
+                alt="Scientific Computing"
+              />
+              <div class="card-body">
+                <h>PHYS 2600</h>
+                <p class="card-text">
+                  Learned the fundamentals of scientific programming and data
+                  analysis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <footer class="bg-light text-center text-lg-start">
+      <ul class="navbar-nav">
+        <a
+          class="navbar-brand"
+          href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwikuff25Yf2AhWLCjQIHcKLDx0QFnoECAcQAQ&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fcolton-klable-a46329225&usg=AOvVaw10857yUGFQmc1fD2Dmi0Gj"
+        >
+          <img
+            class="rounded-circle"
+            src="linked.png"
+            alt="Github Logo"
+            width="30"
+            height="30"
+          />
+        </a>
+      </ul>
     </footer>
   </body>
 </html>
