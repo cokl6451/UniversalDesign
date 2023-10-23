@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All the Fish I've Caught</title>
+    <link rel="stylesheet" href="/Users/coltonklable/Coding/UniversalDesign/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+    <nav id="skip-nav">
+        <a href="#main-content">Skip to Main Content</a>
+    </nav>
+
+    <header>
+        <h1>Fish That I Have Caught</h1>
+    </header>
+
+    <main id="main-content">
+
+        <form id="fishForm">
+            <label for="name">Fish Type: </label>
+            <input type="text" id="name" name="name" required aria-required="true">
+            <label for="opinion">Personal Opinion:</label>
+            <input type="text" id="opinion" name="opinion" required aria-required="true">
+            <input type="submit" value="Submit">
+        </form>
+
+        <table id="fishTable">
+            <caption>Fish Data</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Fish Type <i class="material-icons">phishing</i></th>
+                    <th scope="col">Personal Opinion <i class="material-icons">mood</i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Brook Trout</td>
+                    <td>Very cool fish. Did not fight much. </td>
+                </tr>
+                <tr>
+                    <td>Rainbow Trout</td>
+                    <td>Pretty fish. </td>
+                </tr>
+                <tr>
+                    <td>Brown Trout</td>
+                    <td>Not cool. </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+</body>
+<script src="/Users/coltonklable/Coding/UniversalDesign/js/scripts.js"></script>
+
+</html>

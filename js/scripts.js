@@ -1,7 +1,15 @@
-/*!
-* Start Bootstrap - Personal v1.0.1 (https://startbootstrap.com/template-overviews/personal)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-personal/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
+
+document.getElementById('fishForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var name = document.getElementById('name').value;
+    var opinion = document.getElementById('opinion').value;
+    var tbody = document.getElementById('fishTable').getElementsByTagName('tbody')[0];
+    var newRow = tbody.insertRow();
+    var fishCell = newRow.insertCell();
+    var opinionCell = newRow.insertCell();
+    fishCell.textContent = name;
+    opinionCell.textContent = opinion;
+    document.getElementById('name').value = '';
+    document.getElementById('opinion').value = '';
+});
+
