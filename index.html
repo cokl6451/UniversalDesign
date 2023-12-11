@@ -1,80 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <title>Colton Klable Portal</title>
-  </head>
-  <body style="background-color: grey">
-    <a href="#mainContent" class="skip-link">Skip to Main Content</a>
-    <div class="container">
-      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="wiki.html">Wikipedia Assignment</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="fish.html">Fish Log</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="grid.html">Accessible Grid</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <a class="navbar-brand" href="https://github.com/cokl6451">
-            <img
-              class="rounded-circle"
-              src="assets/me.jpg"
-              alt="Little picture of me that leads to my github"
-              width="30"
-              height="30"
-            />
-          </a>
-        </ul>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Colton Klable - Software Engineer Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="css/index.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body id="page-top">
+        <a href="#about" class="skip-link">Skip to Content</a>
+        <button class="menu-toggle rounded" aria-label="Open Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <a class="menu-toggle rounded" alt="scroll bar" ><i class="fas fa-bars"></i></a>
+        <nav id="top-nav">
+          <ul class="top-nav-items">
+              <li class="nav-item"><a href="wiki.html">Wiki Assignment</a></li>
+              <li class="nav-item"><a href="fish.html">Fish Log</a></li>
+              <li class="nav-item"><a href="grid.html">Accessible Grid</a></li>
+              <li class="nav-item"><a href="what.html">Final Project</a></li>
+          </ul>
       </nav>
-    </div>
-    <br />
-    <div class="container text-center">
-      <img
-        src="assets/me.jpg"
-        alt="Picture of Colton Klable"
-        height="300px"
-        width="330px"
-      />
-    </div>
-    <div id=mainContent class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="about-me-container bg-dark text-white p-4 rounded">
-                    <h2 class="text-center">About Me</h2>
-                    <p>Hi, my name is Colton Cash Klable. My dad liked Johnny Cash but my mom hated the name Johnny because she had a manager named Johnny at the time, so they made Cash my middle name. I've lived pretty much everywhere on the front range because my mom works in the mountains, but I usually just say Morrison because then I can say "yeah you know Red Rocks, yeah that's like kinda where I'm from" and people will understand if they're not from Colorado. You wouldn't know it fom this website, but I am a software engineer. I only do backend development, so I am in this class to become a solid designer as well. I'm interested in high octane activites like park skiing, demolitions, and Rocket League. I want to be a software architect in the next 10 years, mostly because it sounds cool.</p>
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">Colton C. Klable</h1>
+                <h2 class="mb-5"><em>Software Development Engineer I - Travelport</em></h3>
+                <a class="btn btn-dark btn-xl" href="#about">About Me</a>
+            </div>
+        </header>
+        <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Backend Java Developer | Computer Science Major | Mathematics Minor</h2>
+                        <p class="lead mb-5">
+                            I am a passionate fullstack developer with professional experience in the travel industry building large scale Java APIs. My foundation as a computer scientist and mathematician has led to an unwavering curiosity in both respective subjects and especially their intersection in fields such as Cybersecurity and Artifical Intelligence. Please feel free to view some of my projects below.
+                        </p>
+                        <a class="btn btn-dark btn-xl" href="#portfolio">Projects</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>    
-    <br />
-    <footer class="bg-light text-center text-lg-start">
-      <ul class="navbar-nav">
-        <a
-          class="navbar-brand"
-          href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwikuff25Yf2AhWLCjQIHcKLDx0QFnoECAcQAQ&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fcolton-klable-a46329225&usg=AOvVaw10857yUGFQmc1fD2Dmi0Gj"
-        >
-          <img
-            class="rounded-circle"
-            src="assets/me.jpg"
-            alt="Little picture of me that leads to my linkedin"
-            width="30"
-            height="30"
-          />
-        </a>
-      </ul>
-    </footer>
-  </body>
+        </section>
+        <section class="content-section bg-dark text-white text-center" id="interests">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h2 class="mb-5">Fields of Interest</h2>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="material-symbols-outlined">api</i></span>
+                        <h3><strong>Backend Development</strong></h3>
+                        <p class="text-faded mb-0">Spring | Node | Express | Golang | Flask</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-ghost"></i></span>
+                        <h3><strong>AI</strong></h3>
+                        <p class="text-faded mb-0">PyTorch | Deep Learning | A3C</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="material-symbols-outlined">smart_toy</i></span>
+                        <h3><strong>Robotics</strong></h3>
+                        <p class="text-faded mb-0">ROS | Gazebo | OpenCV | C | C++</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-organization"></i></span>
+                        <h3><strong>Cyber Security</strong></h3>
+                        <p class="text-faded mb-0">Network Security | Pen Testing | Cryptography</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="callout">
+        </section>
+        <section class="content-section" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h2 class="mb-5">Recent Projects</h2>
+                </div>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://github.com/cokl6451/Self-Driving-Car">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1">Self-Driving Car</div>
+                                    <p class="mb-0"></p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-1.png" alt="Image of self driving car in action" />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://github.com/cokl6451/Snek3D">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1">Snek3D</div>
+                                    <p class="mb-0"></p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-2.png" alt="image of a 3D snake wrapping around a globe" />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://github.com/cokl6451/Cyber-Suite">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1">Penetration Testing Tools</div>
+                                    <p class="mb-0"></p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-3.png" alt="image of folder with python logo and white hat" />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="what.html">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1">Accessible Web Portal</div>
+                                    <p class="mb-0"></p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-4.png" alt="image containing aspects of accessible web design" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a class="scroll-to-top rounded" href="#page-top" alt="scroll bar"><i class="fas fa-angle-up"></i></a>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>
