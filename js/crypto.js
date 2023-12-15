@@ -178,3 +178,58 @@ function powerMod(base, exponent, modulus) {
 }
 
 
+document.getElementById('pollardForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var n = parseInt(document.getElementById('prN').value);
+
+    
+    function pollardRho(n) {
+        // initialize the turle and hare sequences
+        var turtleSequence = [2];
+        var hareSequence = [2];
+        var steps = [];
+
+        // we'll use f(x) = x^2 + 1
+        function f(x) {
+            return (x * x + 1) % n;
+        }
+
+        // generate the turtle sequence
+        for (var i = 0; i < 10; i++) {
+            turtleSequence.push(f(turtleSequence[i]));
+        }
+
+        steps.push(`Turtle sequence: ${turtleSequence}`);
+        
+        // generate the hare sequence
+        for (var i = 0; i < 10; i++) {
+            hareSequence.push(f(f(hareSequence[i])));
+        }
+        steps.push(`Hare sequence: ${hareSequence}`);
+
+        // take the difference of the two sequences and find the gcd with n
+        var diff = [];
+        for (var i = 0; i < 10; i++) {
+            diff.push(Math.abs(turtleSequence[i] - hareSequence[i]));
+        }
+        steps.push(`Difference sequence: ${diff}`);
+
+        var gcd = 1;
+        // find the gcd of the differences
+        for (var i = 0; i < diff.length; i++) {
+            gcd = extendedEuclidean(diff[i], n)[0];
+            if (gcd != 1) break;
+        }
+        steps.push(`GCD of differences: ${gcd}`);
+
+        var stepsHtml = steps.map(step => `<p>${step}</p>`).join('');
+        document.getElementById('prResult').innerHTML = `<br>Steps:<br>${stepsHtml}`;
+
+
+    }
+
+    pollardRho(n);
+    
+
+});
