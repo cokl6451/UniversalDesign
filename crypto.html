@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Coding and Cryptography | Algorithms</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="css/crypto.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body id="page-top">
+        <nav id="top-nav">
+            <ul class="top-nav-items">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="#euclideanForm">Euclidean</a></li>
+            </ul>
+        </nav>
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">Coding and Cryptography</h1>
+                <h2 class="mb-5"><em>Common Algorithms</em></h3>
+                <a class="btn btn-dark btn-xl" href="#about">Explore</a>
+            </div>
+        </header>
+        <section class="content-section bg-light" id="about" role="article">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div>
+                        <h1>Euclidean Algorithm</h1>
+                            <form id="euclideanForm">
+                                <input type="number" id="eucA" placeholder="Enter a" required>
+                                <input type="number" id="eucB" placeholder="Enter b" required>
+                                <button class="btn btn-dark btn-xl" type="submit">Get gcd(a, b)</button>
+                             </form>
+                            <div class="container px-4 px-lg-5 text-center">
+                                <p class="lead mb-5" id="euclideanResult"></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section bg-dark text-white text-center" id="interests">
+            <div class="container px-4 px-lg-5">
+                <div>
+                    <h1>Miller-Rabin Primality Test</h1>
+                        <form id="mrForm">
+                            <input type="number" id="mrN" placeholder="Enter n" required>
+                            <button class="btn btn-light btn-xl" type="submit">Check Primality</button>
+                         </form>
+                        <div class="container px-4 px-lg-5 text-center">
+                            <p class="lead mb-5" id="mrResult"></p>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section bg-light" id="rsa" role="article">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div>
+                        <h1>RSA Encryption</h1>
+                        <form id="rsaForm">
+                            <input type="number" id="rsaP" placeholder="Enter a random value" required>
+                            <input type="number" id="rsaQ" placeholder="Enter a random value" required>
+                            <input type="number" id="rsaMessage" placeholder="Enter a numerical message to encrypt" required>
+
+                            <button class="btn btn-dark btn-xl" type="submit">Generate Primes</button>
+                         </form>
+                        <div class="container px-4 px-lg-5 text-center">
+                            <p class="lead mb-5" id="rsaResult">
+                                Please enter two different random values and to generate primes (numbers less than 5 digits work best). These primes will be used to generate a public key. In addition, please enter a numerical message to be encrypted (again, please keep this under 5 digits).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section bg-dark text-white text-center" id="qTeleport">
+            <div class="container px-4 px-lg-5">
+                <div>
+                    <h1>Quantum Teleportation</h1>
+                        <div class="container px-4 px-lg-5 text-center">
+                            <p class="lead mb-5" id="mrResult">Quantum teleportation can be expressed as a method of information sharing not too different from methods such as Diffie Hellman key exchange. The term “teleportation” makes it seem like a qubit is physically teleporting, but it's really just transferring a qubit's state from one location to another. As an example, our two locations will be Alice’s Lab and Bob’s Lab. Let’s assume that Alice and Bob both have one part of an entangled pair of qubits, meaning that any measurement of Alice’s component will definitely affect Bob’s component even if there’s distance between them, i.e. one is at Alice’s lab and one is at Bob’s lab. Alice also has an unentangled qubit, psi, which is the qubit she is teleporting to Bob. In order to entangle Alice’s qubit, psi, with her already entangled component, she can perform a Bell-state measurement which will project psi and the entangled qubit into a superposition of the four Bell states. This measurement is accomplished by a CNOT gate and a Hadamard gate as seen in the figure below. </p>
+                            <img src="assets/img/bell.jpg" alt="CNOT and Hadamard gate used for entanglement">
+                            <p>         </p>
+                            <img src="assets/img/teleport.png" alt="Full quantum teleportation circuit">
+                            <p>         </p>
+                            <p class="lead mb-5" >As seen above, after the CNOT and Hadamard gates, psi is measured and collapses into a classical form, which also collapses Bob’s component since it was part of the original pair. Alice can now send her measurements of her two qubits to Bob. Four protocols exist for Bob based on the results he gets from Alice, each corresponding to one of the possible Bell states. When Bob applies the corresponding protocol, his qubit’s state will be identical to Alice’s original qubit psi. This method of information transferring is critical in quantum mechanics due to the fact that there is “no cloning theorem” which states that an identical copy of an unknown quantum state cannot be created. Thus, to exchange quantum information, one must entangle the qubit with a component of an entangled pair shared between communicators. Here’s an interesting and thorough YouTube video that covers these ideas and gives a visual and mathematical representation of the entire circuit.</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/QuwAM374sFA?si=CL4W5bwNnIWCyuBJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section bg-light" id="bellTest" role="article">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div>
+                        <h1>Implications of the Bell Test</h1>
+                        <div class="container px-4 px-lg-5 text-center">
+                            <p class="lead mb-5" id="bellTestText">
+                                Continuing down the quantum mechanics rabbit hole, and once again talking about the work of John Stewart Bell, we can discuss the Bell Test. First, it’s important to understand the historical debate the test aims to answer. In the early days of quantum physics, Heisenberg’s uncertainty principle was disputed by Albert Einstein, Boris Podolsky, and Nathan Rosen. Ultimately, they claimed that quantum mechanics predicted more information than the Heisenberg principle allowed according to relativity, which would only be possible if information was being transmitted truly instantaneously, which is faster than the speed of light and therefore the EPR paradox was born, named after the trio. They undermined Heisenberg’s uncertainty as a lack of variables, or that hidden variables existed that, if obtained, could be used to determine a particle's position and momentum. Expanding on this, they coined the principle of locality, which limits the speed of transmission to the speed of light, undermining the idea of quantum entanglement. John Bell created an experiment that could produce entangled pairs and measure some quality. In the test, two measurers, Alice and Bob, will be receiving one photon from an entangled pair and measuring its polarity. Alice and Bob each have their own unique set of polarized lenses that they use to modify the state of the photon. According to local hidden variables, the measurements should be independent of each other, with only a certain degree of correlation due to coincidence. However, in every Bell test the results have shown a correlation that exceeds random coincidence. Therefore, some action must be occurring instantaneously at a distance, supporting quantum theory and disproving EPR.                             </p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/9OM0jSTeeBg?si=hogUzmON8NNJVrrR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section bg-dark text-white text-center" id="qTeleport">
+            <div class="container px-4 px-lg-5">
+                <div>
+                    <h1>Cyclical Nature of the Multiplicative Group of a Finite Field</h1>
+                        <div class="container px-4 px-lg-5 text-center">
+                            <p class="lead mb-5" id="mrResult"> </p>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <a class="scroll-to-top rounded" href="#page-top" alt="scroll bar"><i class="fas fa-angle-up"></i></a>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/crypto.js"></script>
+    </body>
+</html>
